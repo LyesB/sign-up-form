@@ -112,8 +112,48 @@ input:focus{
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
+.error{
+  outline: none;
+  border: 1px solid #bc2525;
+}
+
+.error_message{
+  color: #bc2525;
+}
+
 .button-section{
   background: #f8f8f8;
   height: 35%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px inset;
+}
+
+.button-section button{
+  width: 14rem;
+  height: 3.2rem;
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  background: #a2792f;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.5);
+}
+
+button:hover{
+  filter: brightness(130%);
+}
+
+.login{
+  margin-left: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.login a{
+  color: #a2792f;
+  
+  
 }

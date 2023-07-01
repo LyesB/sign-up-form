@@ -57,19 +57,35 @@
                 <div class="form-row">
                     <div class="form-col">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" class="error">
+                        <div class="error_message"></div>
                     </div>
 
                     <div class="form-col">
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password"  id="confirm_password" name="confirm_password">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>             
+                        <input type="password"  id="confirm_password" name="confirm_password" 
+                        class="error">
+                        
                     </div>
                 </div>
                       
                    
             </form>
         </div>
-        <div class="button-section"></div>
+        <div class="button-section">
+            <button type="submit" >Create Account</button><br><br><br>
+            <div class="login">Already have an account? <a href="">Log in</a></div>
+        </div>
     </div>
 </body>
+<script>
+    const password = document.querySelector('#password');
+    const confirm_password = document.querySelector('#confirm_password');
+    const error_message = document.querySelector('.error_message');
+    if(password.textContent === '' || confirm_password === ''){
+        error_message.textContent = "*Passwords do not match";
+    }else if(password.textContent !== confirm_password.textContent){
+        error_message.textContent = "*Passwords do not match";
+    }
+</script>
 </html>
