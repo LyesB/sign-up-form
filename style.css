@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@900&display=swap');
+
 body{
   display: flex;
   margin: 0%;
@@ -44,24 +46,74 @@ body{
 }
 
 .text-section{
-  background: #f0ece2;
+  background: #f8f8f8;
   height: 35%;
+  display: flex;
 }
 
 .text{
   font-size: 26px;
   width: 45ch;
   margin-left: 3rem;
-  
+  margin-bottom: 3rem;
+  align-self: flex-end;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 
 .form-section{
   background: #fff;
   height: 30%;
+  border-top: 1px solid #eeeeee ;
+  
+}
+
+.form-row{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3rem;
+}
+
+.form-col{
+  display: flex;
+  flex-direction: column;
+  margin-right: 7rem;
+  margin-top: 1rem;
+}
+
+legend{
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+label{
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+input{
+  width: 130%;
+  height: 1.7rem;
+  border-radius: 4px;
+  border: 1px solid #D6D9DC;
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+input:focus{
+  outline: none;
+  border: 1px solid #5e87b8;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .button-section{
-  background: #f0ece2;
+  background: #f8f8f8;
   height: 35%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px inset;
 }
